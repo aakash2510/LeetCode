@@ -3,7 +3,6 @@
 // Approach 1:
 // Time : O(N^2)
 // Space : O(1)
-
 class Solution {
 public:
 	vector<int> twoSum(vector<int>& nums, int target)
@@ -29,7 +28,6 @@ public:
 // Approach 2:
 // Time: O(NlogN)
 // Space: O(N)
-
 class Solution {
 public:
     vector<int> twoSum(vector<int>& A, int target)
@@ -52,7 +50,6 @@ public:
 // Approach 3:
 // Time: O(N)
 // Space: O(N)
-
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target)
@@ -63,10 +60,12 @@ public:
         for (int i = 0; i < n; i++)
         {
             int x = target - nums[i];
-            if (mp.find(x) == mp.end()) {
+            if (mp.find(x) == mp.end()) 
+	    {
                 mp[nums[i]] = i;
             }
-            else {
+            else 
+	    {
                 v.push_back(mp[x]);
                 v.push_back(i);
                 break;
