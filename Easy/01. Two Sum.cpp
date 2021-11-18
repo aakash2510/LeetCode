@@ -1,8 +1,9 @@
 // Problem Link : https://leetcode.com/problems/single-number/
 
-// Approach 1:
+// Approach : 1
 // Time : O(N^2)
 // Space : O(1)
+
 class Solution {
 public:
 	vector<int> twoSum(vector<int>& nums, int target)
@@ -25,9 +26,10 @@ public:
 	}
 };
 
-// Approach 2:
+// Approach : 2
 // Time: O(NlogN)
 // Space: O(N)
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& A, int target)
@@ -47,9 +49,10 @@ public:
     }
 };
 
-// Approach 3:
+// Approach : 3
 // Time: O(N)
 // Space: O(N)
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target)
