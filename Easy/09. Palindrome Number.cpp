@@ -1,6 +1,6 @@
 // Problem Link : https://leetcode.com/problems/palindrome-number/
 
-// Approach 1:
+// Approach : 1
 // Time: O(N)
 // Space: O(1)
 
