@@ -1,23 +1,17 @@
 // Problem Link : https://leetcode.com/problems/reverse-integer/
 
-// Approach 1:
-// Time: O(1)
+// Time: O(NlogN)
 // Space: O(1)
 
 class Solution {
 public:
-    int reverse(int x)
-    {
-        long long ans = 0;
-        while (x)
-        {
-            ans = ans * 10 + x % 10;
-            x /= 10;
-        }
-        if (ans > INT_MAX || ans < INT_MIN)
-        {
-            return 0;
-        }
-        return ans;
-    }
+	int reverse(int x) {
+		long long int reverse = 0;
+		while (x != 0) {
+			reverse = (reverse * 10) + (x % 10);
+			x /= 10;
+		}
+		if (reverse > INT_MAX or reverse < INT_MIN) return 0;
+		return reverse;
+	}
 };
