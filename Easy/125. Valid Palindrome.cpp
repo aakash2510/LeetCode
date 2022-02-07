@@ -1,7 +1,7 @@
 // Problem Link : https://leetcode.com/problems/valid-palindrome/
 
 // Time: O(N)
-// Space: O(1)
+// Space : O(1)
 
 class Solution {
 public:
